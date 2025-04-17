@@ -1,0 +1,11 @@
+name: jk_broadcast
+version: '${project.version}'
+main: jiekie.BroadcastPlugin
+api-version: '1.20'
+authors: [Jiekie]
+description: 공지사항 플러그인
+commands:
+  공지사항:
+    description: 공지사항 관련 명령어
+    usage: /공지사항
+    tab-completer: jiekie.completer.BroadcastTabCompleter

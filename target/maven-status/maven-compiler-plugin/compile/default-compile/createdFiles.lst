@@ -1,0 +1,5 @@
+jiekie\command\BroadcastCommand.class
+jiekie\completer\BroadcastTabCompleter.class
+jiekie\util\ChatUtil.class
+jiekie\util\SoundUtil.class
+jiekie\BroadcastPlugin.class
