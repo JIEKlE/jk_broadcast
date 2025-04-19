@@ -9,3 +9,5 @@ commands:
     description: 공지사항 관련 명령어
     usage: /공지사항
     tab-completer: jiekie.completer.BroadcastTabCompleter
+    permission: jk.broadcast.command
+    permission-message: ''

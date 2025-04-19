@@ -14,6 +14,8 @@ public class BroadcastTabCompleter implements TabCompleter {
     @Nullable
     @Override
     public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
+        if(!sender.hasPermission("jk.broadcast.command")) return Collections.emptyList();
+
         if(args.length == 1)
             return Arrays.asList("채팅", "타이틀", "테스트", "도움말");
 
