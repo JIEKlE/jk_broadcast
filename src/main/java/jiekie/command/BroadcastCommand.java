@@ -63,10 +63,7 @@ public class BroadcastCommand implements CommandExecutor {
 
         String contents = getContents(args);
 
-        broadcastBlank();
-        Bukkit.broadcastMessage(getBroadcastPrefix() + contents);
-        broadcastBlank();
-
+        ChatUtil.broadcast(player, contents);
         for(Player onlinePlayer : Bukkit.getOnlinePlayers()) {
             SoundUtil.playNoteBlockBell(onlinePlayer);
         }
@@ -81,7 +78,7 @@ public class BroadcastCommand implements CommandExecutor {
 
         String contents = getContents(args);
         for(Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-            onlinePlayer.sendTitle(contents, "", 10, 100, 10);
+            onlinePlayer.sendTitle("\uA004", contents, 10, 100, 10);
             SoundUtil.playBeaconActivate(onlinePlayer);
         }
     }
@@ -94,13 +91,13 @@ public class BroadcastCommand implements CommandExecutor {
         }
 
         String contents = getContents(args);
-        player.sendMessage(getBroadcastPrefix() + contents);
+        ChatUtil.broadcast(player, contents);
         SoundUtil.playNoteBlockBell(player);
     }
 
     /* 공지 내용 조합 */
     private String getContents(String[] args) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(int i = 1 ; i < args.length ; i++) {
             if(i != 1)
                 sb.append(" ");
@@ -109,16 +106,5 @@ public class BroadcastCommand implements CommandExecutor {
 
         String contents = sb.toString();
         return ChatColor.translateAlternateColorCodes('&', contents);
-    }
-
-    /* 공지 말머리 */
-    private String getBroadcastPrefix() {
-        return "[ " + ChatColor.RED + ChatColor.BOLD + "공 지" + ChatColor.RESET + " ] ";
-    }
-
-    /* 공백 추가 */
-    private void broadcastBlank() {
-        Bukkit.broadcastMessage("");
-        Bukkit.broadcastMessage("");
     }
 }
