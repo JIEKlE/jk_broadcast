@@ -63,7 +63,7 @@ public class BroadcastCommand implements CommandExecutor {
 
         String contents = getContents(args);
 
-        ChatUtil.broadcast(player, contents);
+        ChatUtil.broadcast(contents);
         for(Player onlinePlayer : Bukkit.getOnlinePlayers()) {
             SoundUtil.playNoteBlockBell(onlinePlayer);
         }
@@ -91,7 +91,7 @@ public class BroadcastCommand implements CommandExecutor {
         }
 
         String contents = getContents(args);
-        ChatUtil.broadcast(player, contents);
+        ChatUtil.broadcastTest(player, contents);
         SoundUtil.playNoteBlockBell(player);
     }
 
