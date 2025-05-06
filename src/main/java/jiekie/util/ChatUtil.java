@@ -30,15 +30,11 @@ public class ChatUtil {
 
     /* broadcast */
     public static void broadcastTest(Player player, String contents) {
-        player.sendMessage("");
         player.sendMessage(getBellPrefix() + contents);
-        player.sendMessage("");
     }
 
     public static void broadcast(String contents) {
-        Bukkit.broadcastMessage("");
         Bukkit.broadcastMessage(getBellPrefix() + contents);
-        Bukkit.broadcastMessage("");
     }
 
     /* command */
