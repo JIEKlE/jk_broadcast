@@ -79,7 +79,7 @@ public class BroadcastCommand implements CommandExecutor {
         String contents = getContents(args);
         for(Player onlinePlayer : Bukkit.getOnlinePlayers()) {
             onlinePlayer.sendTitle("\uA004", contents, 10, 100, 10);
-            SoundUtil.playBeaconActivate(onlinePlayer);
+            SoundUtil.playNotification(onlinePlayer);
         }
     }
 
