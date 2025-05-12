@@ -1,7 +1,7 @@
-package jiekie.command;
+package jiekie.broadcast.command;
 
-import jiekie.util.ChatUtil;
-import jiekie.util.SoundUtil;
+import jiekie.broadcast.util.ChatUtil;
+import jiekie.broadcast.util.SoundUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

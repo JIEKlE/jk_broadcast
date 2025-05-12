@@ -1,5 +1,5 @@
-jiekie\command\BroadcastCommand.class
-jiekie\completer\BroadcastTabCompleter.class
-jiekie\util\ChatUtil.class
-jiekie\util\SoundUtil.class
-jiekie\BroadcastPlugin.class
+jiekie\broadcast\completer\BroadcastTabCompleter.class
+jiekie\broadcast\BroadcastPlugin.class
+jiekie\broadcast\util\ChatUtil.class
+jiekie\broadcast\util\SoundUtil.class
+jiekie\broadcast\command\BroadcastCommand.class

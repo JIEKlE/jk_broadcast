@@ -1,4 +1,4 @@
-package jiekie.completer;
+package jiekie.broadcast.completer;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

@@ -1,4 +1,4 @@
-package jiekie.util;
+package jiekie.broadcast.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

@@ -1,7 +1,7 @@
-package jiekie;
+package jiekie.broadcast;
 
-import jiekie.command.BroadcastCommand;
-import jiekie.completer.BroadcastTabCompleter;
+import jiekie.broadcast.command.BroadcastCommand;
+import jiekie.broadcast.completer.BroadcastTabCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BroadcastPlugin extends JavaPlugin {
